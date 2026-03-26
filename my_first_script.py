@@ -1,3 +1,6 @@
-print("Hello Chris")
-print("2 + 2 =", 2 + 2)
-print("5% return on $1000=", 1000 * 1.05)
+investment = 1000
+rate = 0.05
+
+for year in range (1, 31):
+	investment = investment * (1+rate)
+	print("Year", year, ":" , round(investment, 2))
